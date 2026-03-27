@@ -4,9 +4,11 @@ import { useEffect, useState } from "react";
 import { ArrowPathIcon, CheckIcon } from "@heroicons/react/16/solid";
 import { Button, Spinner, Textarea } from "@heroui/react";
 import { useTranslations } from "next-intl";
+
 import { ServerConfigKeys } from "@norish/config/zod/server-config";
 
 import { useAdminSettingsContext } from "../context";
+import { TextareaWithVariables } from "./textarea-with-variables";
 
 interface PromptsFormProps {
   onDirtyChange?: (isDirty: boolean) => void;
@@ -94,25 +96,58 @@ export default function PromptsForm({ onDirtyChange }: PromptsFormProps) {
       </div>
 
       <div className="flex flex-col gap-2">
-        <Textarea
+        <TextareaWithVariables
           description={t("unitConversionDescription")}
           label={t("unitConversion")}
           maxRows={10}
           minRows={4}
           placeholder={t("unitConversionPlaceholder")}
           value={unitConversion}
+          variables={[
+            {
+              key: "sourceSystem",
+              description:
+                'Inserts the recipe\'s current measurement system as a plain string: "metric" or "us". Example: "metric".',
+            },
+            {
+              key: "targetSystem",
+              description:
+                'Inserts the destination measurement system as a plain string: "metric" or "us". Example: "us".',
+            },
+            {
+              key: "units",
+              description:
+                'Inserts the allowed target-unit list. For targetSystem="metric": "g, ml, L, kg, C". For targetSystem="us": "cups, tbsp, tsp, oz, lb, F". Example: "cups, tbsp, tsp, oz, lb, F".',
+            },
+          ]}
           onValueChange={setUnitConversion}
         />
       </div>
 
       <div className="flex flex-col gap-2">
-        <Textarea
+        <TextareaWithVariables
           description={t("nutritionEstimationDescription")}
           label={t("nutritionEstimation")}
           maxRows={15}
           minRows={6}
           placeholder={t("nutritionEstimationPlaceholder")}
           value={nutritionEstimation}
+          variables={[
+            {
+              key: "recipeName",
+              description:
+                'Inserts the recipe name exactly as provided. Example: "Spaghetti Bolognese".',
+            },
+            {
+              key: "servings",
+              description: 'Inserts the serving count converted to a string. Example: "4".',
+            },
+            {
+              key: "ingredients",
+              description:
+                'Inserts a newline-separated bullet list of ingredients in the format "- {amount?} {unit?} {ingredientName}". Examples: "- 2 cups flour", "- 1 tsp salt", "- eggs".',
+            },
+          ]}
           onValueChange={setNutritionEstimation}
         />
       </div>
