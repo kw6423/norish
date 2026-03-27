@@ -105,19 +105,16 @@ export default function PromptsForm({ onDirtyChange }: PromptsFormProps) {
           value={unitConversion}
           variables={[
             {
-              key: "sourceSystem",
-              description:
-                'Inserts the recipe\'s current measurement system as a plain string: "metric" or "us". Example: "metric".',
+              value: "sourceSystem",
+              description: t("sourceSystemVariableDescription"),
             },
             {
-              key: "targetSystem",
-              description:
-                'Inserts the destination measurement system as a plain string: "metric" or "us". Example: "us".',
+              value: "targetSystem",
+              description: t("targetSystemVariableDescription"),
             },
             {
-              key: "units",
-              description:
-                'Inserts the allowed target-unit list. For targetSystem="metric": "g, ml, L, kg, C". For targetSystem="us": "cups, tbsp, tsp, oz, lb, F". Example: "cups, tbsp, tsp, oz, lb, F".',
+              value: "units",
+              description: t("unitsVariableDescription"),
             },
           ]}
           onValueChange={setUnitConversion}
@@ -134,18 +131,16 @@ export default function PromptsForm({ onDirtyChange }: PromptsFormProps) {
           value={nutritionEstimation}
           variables={[
             {
-              key: "recipeName",
-              description:
-                'Inserts the recipe name exactly as provided. Example: "Spaghetti Bolognese".',
+              value: "recipeName",
+              description: t("recipeNameVariableDescription"),
             },
             {
-              key: "servings",
-              description: 'Inserts the serving count converted to a string. Example: "4".',
+              value: "servings",
+              description: t("servingsVariableDescription"),
             },
             {
-              key: "ingredients",
-              description:
-                'Inserts a newline-separated bullet list of ingredients in the format "- {amount?} {unit?} {ingredientName}". Examples: "- 2 cups flour", "- 1 tsp salt", "- eggs".',
+              value: "ingredients",
+              description: t("ingredientsVariableDescription"),
             },
           ]}
           onValueChange={setNutritionEstimation}

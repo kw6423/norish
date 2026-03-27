@@ -555,7 +555,13 @@
       "nutritionEstimationPlaceholder": "Enter the nutrition estimation prompt...",
       "autoTagging": "Auto-Tagging Prompt",
       "autoTaggingDescription": "This prompt is used to generate tags for imported recipes. Define tagging rules and predefined tags list.",
-      "autoTaggingPlaceholder": "Enter the auto-tagging prompt..."
+      "autoTaggingPlaceholder": "Enter the auto-tagging prompt...",
+      "sourceSystemVariableDescription": "Inserts the recipe's current measurement system as a plain string: \"metric\" or \"us\". Example: \"metric\".",
+      "targetSystemVariableDescription": "Inserts the destination measurement system as a plain string: \"metric\" or \"us\". Example: \"us\".",
+      "unitsVariableDescription": "Inserts the allowed target unit list. For targetSystem=\"metric\": \"g, ml, L, kg, C\". For targetSystem=\"us\": \"cups, tbsp, tsp, oz, lb, F\". Example: \"cups, tbsp, tsp, oz, lb, F\".",
+      "recipeNameVariableDescription": "Inserts the recipe name exactly as provided. Example: \"Spaghetti Bolognese\".",
+      "servingsVariableDescription": "Inserts the serving count converted to a string. Example: \"4\".",
+      "ingredientsVariableDescription": "Inserts a newline-separated bullet list of ingredients in the format \"- {amount?} {unit?} {ingredientName}\". Examples: \"- 2 cups flour\", \"- 1 tsp salt\", \"- eggs\"."
     },
     "unsavedChanges": "Unsaved changes",
     "jsonEditor": {
