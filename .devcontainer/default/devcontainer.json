@@ -53,7 +53,32 @@
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "bash",
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": "always",
+          "source.organizeImports": "never"
+        },
+        "eslint.validate": [
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescriptreact"
+        ],
+        "eslint.useFlatConfig": true,
+        "eslint.workingDirectories": [
+          {
+            "pattern": "apps/*/"
+          },
+          {
+            "pattern": "packages/*/"
+          },
+          {
+            "pattern": "tooling/*/"
+          }
+        ],
+        "prettier.prettierPath": "./node_modules/prettier",
+        "prettier.requireConfig": true
       }
     }
   }
