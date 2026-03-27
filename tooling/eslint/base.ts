@@ -123,29 +123,7 @@ export const baseConfig = defineConfig(
           caughtErrorsIgnorePattern: "^_.*?$",
         },
       ],
-      "import/order": [
-        "warn",
-        {
-          groups: [
-            "type",
-            "builtin",
-            "object",
-            "external",
-            "internal",
-            "parent",
-            "sibling",
-            "index",
-          ],
-          pathGroups: [
-            {
-              pattern: "~/**",
-              group: "external",
-              position: "after",
-            },
-          ],
-          "newlines-between": "always",
-        },
-      ],
+      "import/order": "off", // As per openspec, use prettier instead.
       "padding-line-between-statements": [
         "warn",
         {
