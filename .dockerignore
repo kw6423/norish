@@ -1,6 +1,12 @@
 # .dockerignore
 node_modules
 **/node_modules
+**/.venv
+**/__pycache__
+**/*.egg-info
+**/.pytest_cache
+**/.ruff_cache
+*.py[cod]
 .next
 .git
 .gitignore
@@ -42,7 +48,8 @@ packages/ui/dist
 tooling/**/dist
 
 # Mobile app
-apps/mobile/
+apps/mobile/**
+!apps/mobile/package.json
 
 # OpenSpec artifacts — not needed in Docker build
 openspec/
