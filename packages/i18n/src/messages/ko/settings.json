@@ -616,7 +616,13 @@
       "nutritionEstimationPlaceholder": "영양소 추정 프롬프트를 입력하세요...",
       "autoTagging": "자동 태그 추가 프롬프트",
       "autoTaggingDescription": "이 프롬프트는 가져온 레시피에 대한 태그를 생성하는 데 사용됩니다. 태그 지정 규칙과 사전 정의된 태그 목록을 정의합니다.",
-      "autoTaggingPlaceholder": "자동 태그 추가 프롬프트를 입력하세요..."
+      "autoTaggingPlaceholder": "자동 태그 추가 프롬프트를 입력하세요...",
+      "sourceSystemVariableDescription": "레시피의 현재 측정 체계를 일반 문자열로 삽입합니다: \"metric\" 또는 \"us\". 예: \"metric\".",
+      "targetSystemVariableDescription": "대상 측정 체계를 일반 문자열로 삽입합니다: \"metric\" 또는 \"us\". 예: \"us\".",
+      "unitsVariableDescription": "허용된 대상 단위 목록을 삽입합니다. targetSystem=\"metric\"인 경우: \"g, ml, L, kg, C\". targetSystem=\"us\"인 경우: \"cups, tbsp, tsp, oz, lb, F\". 예: \"cups, tbsp, tsp, oz, lb, F\".",
+      "recipeNameVariableDescription": "제공된 그대로의 레시피 이름을 삽입합니다. 예: \"Spaghetti Bolognese\".",
+      "servingsVariableDescription": "인분 수를 문자열로 변환해 삽입합니다. 예: \"4\".",
+      "ingredientsVariableDescription": "줄바꿈으로 구분된 재료 글머리 기호 목록을 \"- {amount?} {unit?} {ingredientName}\" 형식으로 삽입합니다. 예: \"- 2 cups flour\", \"- 1 tsp salt\", \"- eggs\"."
     },
     "unsavedChanges": "저장되지 않은 변경사항",
     "jsonEditor": {

@@ -616,7 +616,13 @@
       "nutritionEstimationPlaceholder": "Entrez le prompt...",
       "autoTagging": "Prompt d’auto‑tag",
       "autoTaggingDescription": "Utilisé pour générer les tags des recettes importées",
-      "autoTaggingPlaceholder": "Entrez le prompt..."
+      "autoTaggingPlaceholder": "Entrez le prompt...",
+      "sourceSystemVariableDescription": "Insère le système de mesure actuel de la recette sous forme de chaîne simple : \"metric\" ou \"us\". Exemple : \"metric\".",
+      "targetSystemVariableDescription": "Insère le système de mesure de destination sous forme de chaîne simple : \"metric\" ou \"us\". Exemple : \"us\".",
+      "unitsVariableDescription": "Insère la liste des unités de destination autorisées. Pour targetSystem=\"metric\" : \"g, ml, L, kg, C\". Pour targetSystem=\"us\" : \"cups, tbsp, tsp, oz, lb, F\". Exemple : \"cups, tbsp, tsp, oz, lb, F\".",
+      "recipeNameVariableDescription": "Insère le nom de la recette exactement tel qu'il est fourni. Exemple : \"Spaghetti Bolognese\".",
+      "servingsVariableDescription": "Insère le nombre de portions converti en chaîne. Exemple : \"4\".",
+      "ingredientsVariableDescription": "Insère une liste à puces d'ingrédients séparés par des sauts de ligne au format \"- {amount?} {unit?} {ingredientName}\". Exemples : \"- 2 cups flour\", \"- 1 tsp salt\", \"- eggs\"."
     },
     "unsavedChanges": "Modifications non enregistrées",
     "jsonEditor": {

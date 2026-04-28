@@ -616,7 +616,13 @@
       "nutritionEstimationPlaceholder": "Voer de voedingswaarde prompt in...",
       "autoTagging": "Auto-tagging Prompt",
       "autoTaggingDescription": "Deze prompt wordt gebruikt om tags te genereren voor geïmporteerde recepten. Definieer taggingregels en een lijst met voorgedefinieerde tags.",
-      "autoTaggingPlaceholder": "Voer de auto-tagging prompt in..."
+      "autoTaggingPlaceholder": "Voer de auto-tagging prompt in...",
+      "sourceSystemVariableDescription": "Voegt het huidige maatsysteem van het recept in als gewone tekst: \"metric\" of \"us\". Voorbeeld: \"metric\".",
+      "targetSystemVariableDescription": "Voegt het doelmaatsysteem in als gewone tekst: \"metric\" of \"us\". Voorbeeld: \"us\".",
+      "unitsVariableDescription": "Voegt de lijst met toegestane doeleenheden in. Voor targetSystem=\"metric\": \"g, ml, L, kg, C\". Voor targetSystem=\"us\": \"cups, tbsp, tsp, oz, lb, F\". Voorbeeld: \"cups, tbsp, tsp, oz, lb, F\".",
+      "recipeNameVariableDescription": "Voegt de receptnaam exact in zoals opgegeven. Voorbeeld: \"Spaghetti Bolognese\".",
+      "servingsVariableDescription": "Voegt het aantal porties in als tekst. Voorbeeld: \"4\".",
+      "ingredientsVariableDescription": "Voegt een door regeleinden gescheiden opsommingslijst met ingrediënten in met het formaat \"- {amount?} {unit?} {ingredientName}\". Voorbeelden: \"- 2 cups flour\", \"- 1 tsp salt\", \"- eggs\"."
     },
     "unsavedChanges": "Niet-opgeslagen wijzigingen",
     "jsonEditor": {

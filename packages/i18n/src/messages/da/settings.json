@@ -616,7 +616,13 @@
       "nutritionEstimationPlaceholder": "Indtast prompt til næringsestimering...",
       "autoTagging": "Prompt til auto-tagging",
       "autoTaggingDescription": "Denne prompt bruges til at generere tags for importerede opskrifter. Definer tagningregler og liste over foruddefinerede tags.",
-      "autoTaggingPlaceholder": "Indtast prompt til auto-tagging..."
+      "autoTaggingPlaceholder": "Indtast prompt til auto-tagging...",
+      "sourceSystemVariableDescription": "Indsætter opskriftens nuværende målesystem som en almindelig tekststreng: \"metric\" eller \"us\". Eksempel: \"metric\".",
+      "targetSystemVariableDescription": "Indsætter destinationsmålesystemet som en almindelig tekststreng: \"metric\" eller \"us\". Eksempel: \"us\".",
+      "unitsVariableDescription": "Indsætter listen over tilladte målenheder for destinationen. For targetSystem=\"metric\": \"g, ml, L, kg, C\". For targetSystem=\"us\": \"cups, tbsp, tsp, oz, lb, F\". Eksempel: \"cups, tbsp, tsp, oz, lb, F\".",
+      "recipeNameVariableDescription": "Indsætter opskriftens navn præcis som angivet. Eksempel: \"Spaghetti Bolognese\".",
+      "servingsVariableDescription": "Indsætter antal portioner konverteret til en tekststreng. Eksempel: \"4\".",
+      "ingredientsVariableDescription": "Indsætter en punktliste med ingredienser adskilt af linjeskift i formatet \"- {amount?} {unit?} {ingredientName}\". Eksempler: \"- 2 cups flour\", \"- 1 tsp salt\", \"- eggs\"."
     },
     "unsavedChanges": "Ugemte ændringer",
     "jsonEditor": {

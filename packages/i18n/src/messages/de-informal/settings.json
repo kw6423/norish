@@ -616,7 +616,13 @@
       "nutritionEstimationPlaceholder": "Gib den Nährwert-Schätzungs-Prompt ein...",
       "autoTagging": "Auto-Tagging-Prompt",
       "autoTaggingDescription": "Dieser Prompt wird verwendet, um Tags für importierte Rezepte zu generieren. Definiere Tagging-Regeln und vordefinierte Tags-Liste.",
-      "autoTaggingPlaceholder": "Gib den Auto-Tagging-Prompt ein..."
+      "autoTaggingPlaceholder": "Gib den Auto-Tagging-Prompt ein...",
+      "sourceSystemVariableDescription": "Fügt das aktuelle Maßsystem des Rezepts als einfachen Text ein: \"metric\" oder \"us\". Beispiel: \"metric\".",
+      "targetSystemVariableDescription": "Fügt das Ziel-Maßsystem als einfachen Text ein: \"metric\" oder \"us\". Beispiel: \"us\".",
+      "unitsVariableDescription": "Fügt die Liste der erlaubten Zieleinheiten ein. Für targetSystem=\"metric\": \"g, ml, L, kg, C\". Für targetSystem=\"us\": \"cups, tbsp, tsp, oz, lb, F\". Beispiel: \"cups, tbsp, tsp, oz, lb, F\".",
+      "recipeNameVariableDescription": "Fügt den Rezeptnamen genau wie angegeben ein. Beispiel: \"Spaghetti Bolognese\".",
+      "servingsVariableDescription": "Fügt die Portionsanzahl als Text ein. Beispiel: \"4\".",
+      "ingredientsVariableDescription": "Fügt eine durch Zeilenumbrüche getrennte Aufzählungsliste der Zutaten im Format \"- {amount?} {unit?} {ingredientName}\" ein. Beispiele: \"- 2 cups flour\", \"- 1 tsp salt\", \"- eggs\"."
     },
     "unsavedChanges": "Ungespeicherte Änderungen",
     "jsonEditor": {

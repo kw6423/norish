@@ -616,7 +616,13 @@
       "nutritionEstimationPlaceholder": "Wpisz prompt szacowania wartości odżywczych...",
       "autoTagging": "Prompt automatycznego tagowania",
       "autoTaggingDescription": "Ten prompt jest używany do generowania tagów dla importowanych przepisów. Zdefiniuj reguły tagowania i listę predefiniowanych tagów.",
-      "autoTaggingPlaceholder": "Wpisz prompt automatycznego tagowania..."
+      "autoTaggingPlaceholder": "Wpisz prompt automatycznego tagowania...",
+      "sourceSystemVariableDescription": "Wstawia aktualny system miar przepisu jako zwykły tekst: \"metric\" lub \"us\". Przykład: \"metric\".",
+      "targetSystemVariableDescription": "Wstawia docelowy system miar jako zwykły tekst: \"metric\" lub \"us\". Przykład: \"us\".",
+      "unitsVariableDescription": "Wstawia listę dozwolonych jednostek docelowych. Dla targetSystem=\"metric\": \"g, ml, L, kg, C\". Dla targetSystem=\"us\": \"cups, tbsp, tsp, oz, lb, F\". Przykład: \"cups, tbsp, tsp, oz, lb, F\".",
+      "recipeNameVariableDescription": "Wstawia nazwę przepisu dokładnie w podanej formie. Przykład: \"Spaghetti Bolognese\".",
+      "servingsVariableDescription": "Wstawia liczbę porcji przekonwertowaną na tekst. Przykład: \"4\".",
+      "ingredientsVariableDescription": "Wstawia listę składników z wypunktowaniem oddzieloną znakami nowej linii w formacie \"- {amount?} {unit?} {ingredientName}\". Przykłady: \"- 2 cups flour\", \"- 1 tsp salt\", \"- eggs\"."
     },
     "unsavedChanges": "Niezapisane zmiany",
     "jsonEditor": {

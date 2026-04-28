@@ -616,7 +616,13 @@
       "nutritionEstimationPlaceholder": "Introduce el prompt de estimación nutricional...",
       "autoTagging": "Prompt de etiquetado automático",
       "autoTaggingDescription": "Este prompt se usa para generar etiquetas al importar recetas. Define reglas de etiquetado y la lista de etiquetas predefinidas.",
-      "autoTaggingPlaceholder": "Introduce el prompt de etiquetado automático..."
+      "autoTaggingPlaceholder": "Introduce el prompt de etiquetado automático...",
+      "sourceSystemVariableDescription": "Inserta el sistema de medidas actual de la receta como una cadena simple: \"metric\" o \"us\". Ejemplo: \"metric\".",
+      "targetSystemVariableDescription": "Inserta el sistema de medidas de destino como una cadena simple: \"metric\" o \"us\". Ejemplo: \"us\".",
+      "unitsVariableDescription": "Inserta la lista de unidades de destino permitidas. Para targetSystem=\"metric\": \"g, ml, L, kg, C\". Para targetSystem=\"us\": \"cups, tbsp, tsp, oz, lb, F\". Ejemplo: \"cups, tbsp, tsp, oz, lb, F\".",
+      "recipeNameVariableDescription": "Inserta el nombre de la receta exactamente como se proporcionó. Ejemplo: \"Spaghetti Bolognese\".",
+      "servingsVariableDescription": "Inserta el número de porciones convertido a una cadena. Ejemplo: \"4\".",
+      "ingredientsVariableDescription": "Inserta una lista con viñetas de ingredientes separada por saltos de línea en el formato \"- {amount?} {unit?} {ingredientName}\". Ejemplos: \"- 2 cups flour\", \"- 1 tsp salt\", \"- eggs\"."
     },
     "unsavedChanges": "Cambios sin guardar",
     "jsonEditor": {

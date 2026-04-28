@@ -616,7 +616,13 @@
       "nutritionEstimationPlaceholder": "Введите промпт оценки пищевой ценности...",
       "autoTagging": "Промпт автотегирования",
       "autoTaggingDescription": "Этот промпт используется для генерации тегов для импортируемых рецептов. Задайте правила тегирования и список предустановленных тегов.",
-      "autoTaggingPlaceholder": "Введите промпт автотегирования..."
+      "autoTaggingPlaceholder": "Введите промпт автотегирования...",
+      "sourceSystemVariableDescription": "Вставляет текущую систему мер рецепта как обычную строку: \"metric\" или \"us\". Пример: \"metric\".",
+      "targetSystemVariableDescription": "Вставляет целевую систему мер как обычную строку: \"metric\" или \"us\". Пример: \"us\".",
+      "unitsVariableDescription": "Вставляет список разрешённых целевых единиц. Для targetSystem=\"metric\": \"g, ml, L, kg, C\". Для targetSystem=\"us\": \"cups, tbsp, tsp, oz, lb, F\". Пример: \"cups, tbsp, tsp, oz, lb, F\".",
+      "recipeNameVariableDescription": "Вставляет название рецепта точно в указанном виде. Пример: \"Spaghetti Bolognese\".",
+      "servingsVariableDescription": "Вставляет количество порций, преобразованное в строку. Пример: \"4\".",
+      "ingredientsVariableDescription": "Вставляет разделённый переносами строк маркированный список ингредиентов в формате \"- {amount?} {unit?} {ingredientName}\". Примеры: \"- 2 cups flour\", \"- 1 tsp salt\", \"- eggs\"."
     },
     "unsavedChanges": "Несохранённые изменения",
     "jsonEditor": {
